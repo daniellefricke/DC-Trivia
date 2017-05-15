@@ -1,4 +1,4 @@
-/*facts about dc
+/*facts about DC
 Which 2 presidents are buried at Arlington? Kennedy & Taft
 DC's official bird: Wood Thrush
 What house, formerly owned by a member of the Lincoln Cabinet, is now the guesthouse of the executive branch? The Blair house
@@ -17,12 +17,17 @@ Tree of DC? Scarlett Oak
 Motto of DC? Justitia Omnibus
 What was the capital called before it was called DC? Federal City
 
-Set these up as an object/class with 2 keys (question & true or false).
-Create a function that loops through the questions one by owne
-Envoke a function that takes the input and evaluates it aganst the answer
+Set these up as an array object with 2 keys (question & answer).
+ Envoke a function that takes the input and evaluates it aganst the answer
 Add points when player is correct
 Prompt a total after 10 questions
 */
+
+$(document).ready(function () {
+console.log("Hello");
+
+//event handlers
+$("#big .qwindow").click(function(currentQuestion) {
 
 let questions = [
   {que: 'Kennedy and Taft are the only two presidents buried at Arlington National Cemetary', answer: 'true'},
@@ -33,6 +38,27 @@ let questions = [
   {que: 'DCs landmass is 100 square miles', answer: 'true'},
   {que: 'The official tree of DC is the Scarlett Oak', answer: 'true'},
   {que: 'The official motto of DC is Ab Ordine Libertas - from order comes freedom', answer: 'false'},
-  {que: 'Before being called The District of Columbia, DC was called Federal City', answer; 'true'},
+  {que: 'Before being called The District of Columbia, DC was called Federal City', answer: 'true'},
   {que: 'The official bird of DC is the Bald Eagle', answer:'false'}
 ]
+
+//show and change questions
+  var currentQuestion = questions.que[0];
+  for(let i=0; i<questions.length; i++) {
+    console.log("Check out the questions!")
+  }
+})
+
+//event handler for submit & functiom to eval answer against questions
+
+
+
+
+//function to add, maintain, and display score
+
+
+
+
+//prompt after 10 questions with score & response
+
+});
