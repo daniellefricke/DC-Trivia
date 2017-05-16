@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <meta charset="utf-8">
     <link rel="stylesheet" type "text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <title>District Trivia</title>
   </head>
 
-
   <body>
-    <div id = "big" class = "appfield">
+    <div class = "appfield">
         <img src = "imgs/districttrivia.png", alt = "trivia logo">
         <h1>Can you spot the "alternative facts"?</h1>
-        <p><a>Welcome to District Trivia!</a> Answer the questions below in the answer box with "true" or "false" responses. Each correct answer is worth 100 points! <a>GOOD LUCK!!!</a></p>
+        <p><a>Welcome to District Trivia!</a> Answer the questions below in the answer box with "true" or "false" responses. Each correct answer is worth 10 points! <a>GOOD LUCK!!!</a></p>
 
         <div class = "points">0</div>
         <div class = "game">
-        <div class = "qwindow"></div>
-        <input class="input" type="text" placeholder="Answer true or false"/>
-        <input class="submit" type="button" value="Submit" />
+        <div class = "qwindow">Hit Go! below to see first question!</div>
+        <input class="input" type="text" placeholder="Answer: true or false"/>
+        <input class="go" type="button" value="Go!" />
         </div>
     </div>
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
