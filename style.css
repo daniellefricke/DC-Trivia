@@ -4,7 +4,7 @@ body {
 }
 
 .appfield {
-  background: white;
+  background-color: white;
   width: 600px;
   padding: 20px;
   border: 2px solid red;
@@ -25,13 +25,13 @@ h1 {
   color: grey;
   font-size: 30px;
   border-bottom: 1px solid red;
-  margin: 0;
+  margin: 10px 0;
 }
 
 p {
   font-family: 'PT Sans', sans-serif;
   padding: 10px;
-  margin: 10px auto
+  margin: 5px auto
 }
 
 a{
@@ -44,8 +44,10 @@ a{
   border:1px solid grey;
   border-radius: 10px;
   font-family: 'PT Sans', sans-serif;
-  font-size: 20px;
-  background: white;
+  font-size: 40px;
+  background-image: url("imgs/star.png");
+  background-position: center;
+  background-size: 50px;
   width: 200px;
   margin: auto;
   color: grey;
@@ -57,9 +59,9 @@ a{
   color: black;
   font-size: 25px;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid red;
   padding: 10px;
-  margin: 10px;
+  margin: 15px;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -78,8 +80,18 @@ a{
 
 .go {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   font-family: 'PT Sans', sans-serif;
   font-size: 20px;
+  font-weight: bolder;
   color: red;
+}
+
+.restart{
+  display: block;
+  margin: 30px auto 5px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #000000;
 }
