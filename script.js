@@ -8,6 +8,7 @@ $(document).ready(function () {
 
   var clickCounter = 0
   var intClickCounter = -1
+  var pointsCorrect = 0
 
   let questions = [
     {que: 'Kennedy and Taft are the only two presidents buried at Arlington National Cemetary', answer: "true", backup: 'This is true!'},
@@ -38,19 +39,22 @@ $(document).ready(function () {
 
 
 //evaluat answer and award points
-  var currentAnswer = questions[clickCounter].answer;
+
+  var score = $(".appfield .points").text(pointsCorrect);
   $(".appfield .go").click(function() {
-      clickCounter.length = 10, intClickCounter++
-  var userAnswer = $(".appfield .answerfield").val();
-      console.log("This is the user answer: " + userAnswer)
-      if (userAnswer === currentAnswer){
+    intClickCounter++
+    var currentAnswer = questions[intClickCounter].answer;
+    var userAnswer = $(".appfield .answerfield").val();
+      console.log("This is the user answer: " + userAnswer);
+      console.log(currentAnswer);
+      if (userAnswer == currentAnswer){
         alert("You are correct!");
+        scoreUpdate = score + 10
       } else {
         alert(questions[intClickCounter].backup);
       }
   })
 })
-
 
 
 
