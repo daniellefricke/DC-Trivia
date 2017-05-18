@@ -37,3 +37,6 @@ Trivia Specific:
 - Add animation effects to front end
 - Answer input clear after each submission
 - Keypress(enter) submits answer
+
+##Source List
+- Trivia questions are from: http://www.onlyinyourstate.com/dc/fun-facts-washington-dc/
