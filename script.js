@@ -14,16 +14,16 @@ $(document).ready(function () {
 
 //questions
   let questions = [
-    {que: 'The Liberty Rose is the official flower of DC', answer: "false", backup: 'This is false. The official flower is the American Beauty Rose.'},
-    {que: 'Kennedy and Taft are the only two presidents buried at Arlington National Cemetary', answer: "true", backup: 'This is true!'},
+    {que: 'Metro collects around 250 lost items every month', answer: "false", backup: 'Metro collects around 1,000 to 1,200 lost items a month!'},
+    {que: 'There is no J Street', answer: "true", backup: 'This is true! There is no such thing as a J street in DC.'},
     {que: 'Georgetown was incorporated into DC in 1871', answer: "true", backup: 'This is true!'},
-    {que: 'DCs pro football team is the Redskins', answer: "true", backup: 'This is true!'},
-    {que: 'Thomas Jefferson was the first president to live in the White House', answer: "false", backup: 'This is false. John Adams was the first president to live in the White House'},
-    {que: 'DCs landmass is 100 square miles', answer: "true", backup: 'This is true!'},
-    {que: 'The official tree of DC is the Scarlett Oak', answer: "true", backup: 'This is true!'},
-    {que: 'The official motto of DC is Ab Ordine Libertas - from order comes freedom', answer: "false", backup: 'This is false! The official DC motto is Justitia Omnibus'},
-    {que: 'Before being called The District of Columbia, DC was called Federal City', answer: "true", backup: 'This is true!'},
-    {que: 'The official bird of DC is the Bald Eagle', answer:"false", backup: 'This is false. The official bird is the Wood Thrush'},
+    {que: 'DC residents drink more wine per capita than any other state', answer: "true", backup: 'This is true! Cheers!'},
+    {que: 'There is a sunken ship beneath the Capitol building', answer: "false", backup: 'This is false. There is an empty crypt beneath the Capitol!'},
+    {que: 'Three alligators have lived at the White House.', answer: "true", backup: 'This is true! John Quincy Adams had one and Herbert Hoover had a son with two.'},
+    {que: 'DC residents could vote for President since only 1961', answer: "true", backup: 'This is true! DC had no representation in the Senate until 1961'},
+    {que: 'There is an underground private subway that connects the Capitol building with the White House', answer: "false", backup: 'This is false! There is a subway but it connects the Capitol with House and Senate office buildings, not the White House.'},
+    {que: 'The Library of Congress is the biggest library in the world', answer: "true", backup: 'This is true! It has more than 162 million objects in its collection'},
+    {que: 'President Roosevelt started the baseball tradition of the 7th inning stretch in DC.', answer:"false", backup: 'This is false. President Taft started the trend. He stood up to stretch at a game and everyone around him thought he was leaving, so out of respect they stood too. Now you have the 7th inning stretch!'},
     {que: 'Press restart button below to play again!'}
   ]
 
@@ -33,6 +33,7 @@ $(document).ready(function () {
   // console.log(output)
   // console.log(questions[0].backup)
   $(".appfield .go").click(function() {
+    $(".appfield .answerfield").keypress
       clickCounter++
       output = questions[clickCounter].que;
       $(".appfield .qwindow").text(output)
@@ -42,6 +43,7 @@ $(document).ready(function () {
 
 //evaluat answer and award points
   $(".appfield .go").click(function() {
+    $(".appfield .answerfield").keypress
 
     intClickCounter++
     var currentAnswer = questions[intClickCounter].answer;
