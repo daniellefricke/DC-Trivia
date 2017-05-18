@@ -33,7 +33,7 @@ $(document).ready(function () {
   // console.log(output)
   // console.log(questions[0].backup)
   $(".appfield .go").click(function() {
-    $(".appfield .answerfield").keypress
+    //$(".appfield .answerfield").keypress(enter); NOT WORKING - need to debug
       clickCounter++
       output = questions[clickCounter].que;
       $(".appfield .qwindow").text(output)
@@ -43,7 +43,7 @@ $(document).ready(function () {
 
 //evaluat answer and award points
   $(".appfield .go").click(function() {
-    $(".appfield .answerfield").keypress
+    //$(".appfield .answerfield").keypress(enter);
 
     intClickCounter++
     var currentAnswer = questions[intClickCounter].answer;
