@@ -1,3 +1,4 @@
+/* AM: If you find that you're repeating the same selectors repeatedly, consider either consolidating them into their own class(es) that you can then apply to the relevant HTML elements. */
 
 body {
   background: #ccf2ff;

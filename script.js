@@ -1,9 +1,11 @@
+// AM: Nice! Your code is really concise and clocks in at under 80 lines, comments included!
 /*
 Set these up as an array object with 2 keys (question & answer).
 Envoke a function that takes the input and evaluates it aganst the answer
 Add points when player is correct
 Prompt a total after 10 questions
 */
+// AM: Think about how you could re-organize all your code into an object(s) or class(es)
 $(document).ready(function () {
 
   var clickCounter = 0;
@@ -33,6 +35,7 @@ $(document).ready(function () {
   // console.log(output)
   // console.log(questions[0].backup)
   $(".appfield .go").click(function() {
+    // AM: Isn't `.keypress` an event listener? If so, it's going to need some arguments...
     $(".appfield .answerfield").keypress
       clickCounter++
       output = questions[clickCounter].que;
@@ -43,13 +46,16 @@ $(document).ready(function () {
 
 //evaluat answer and award points
   $(".appfield .go").click(function() {
+    // AM: Isn't `.keypress` an event listener? If so, it's going to need some arguments...
     $(".appfield .answerfield").keypress
-
+    // AM: Can you elaborate on the purpose of the two click counters? Might help shed some light on the issue you mentioned in your project submission. You can leave a comment on this PR.
     intClickCounter++
     var currentAnswer = questions[intClickCounter].answer;
     var userAnswer = $(".appfield .answerfield").val();
     //protect userAnswer - convert to lowercase
     var userAnswerClean = userAnswer.toLowerCase();
+      // AM: Remember to remove console.log statements from your final submission. Assume potential employers will be looking at this!
+      // AM: If you want to keep these debugging statements, consider putting them in a separate branch.
       //console.log("This is the user answer: " + userAnswerClean);
       //console.log(currentAnswer);
       if (userAnswerClean === currentAnswer){
@@ -72,6 +78,8 @@ $(document).ready(function () {
       })
 
 //restart game button = refresh page
+// AM: How would you do this without using `location.reload()`?
+// AM: What would you need to show/hide? What data values would you need to reset/adjust?
 $(".appfield .restart").click(function() {
   location.reload();
 })
